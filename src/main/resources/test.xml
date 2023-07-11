@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GIC Test Automation Test Suite Add Applicant And CoApplicant" preserve-order="true">
+	<parameter name="selenium.url" value="http://10.161.3.4/home/" />
+	<parameter name="username" value="test2@gichf.com"/>
+	<parameter name="password" value="Welcome@2020"/>
+
+	<!--<listeners> <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" 
+		/> </listeners> -->
+
+
+
+
+	<listeners>
+		<listener class-name="com.nischay.qa.util.ITestListenerClass" />
+	</listeners>
+
+	<test name="GICTestCases">
+		<classes>
+			<!-- <class name="com.nischay.qa.testcases.ApplicantKYCDetailsPageTest"></class>   -->
+			<class name="com.nischay.qa.testcases.CoApplicantKYCDetailsPageTest"></class> 
+		</classes>
+	</test> 
+</suite>

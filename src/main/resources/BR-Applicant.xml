@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GIC Test Automation Test Suite Add Application" preserve-order="true">
+	<parameter name="selenium.url" value="http://10.161.3.4/home/" />
+	<parameter name="username" value="test2@gichf.com"/>
+	<parameter name="password" value="Welcome@2020"/>
+	
+	<!--<listeners> <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" 
+		/> </listeners> -->
+
+	<listeners>
+		<listener class-name="com.nischay.qa.util.ITestListenerClass" />
+	</listeners>
+
+	<test name="GICTestCases">
+		<classes>
+			<class name="com.nischay.qa.testcases.BranchNewApplicationTest"></class> 
+			<class name="com.nischay.qa.testcases.ApplicantKYCDetailsPageTest"></class>  
+		</classes>
+	</test>
+	
+	<!-- <test name="GICTestCases1">
+		<classes> 
+			<class name="com.nischay.qa.testcases.ApplicantCorrespondenceDetailsPageTest"></class> 
+			<class name="com.nischay.qa.testcases.ApplicantFamilyDetailsPageTest"></class> 
+			<class name="com.nischay.qa.testcases.ApplicantEmployerDetailsPageTest"></class> 
+		</classes>
+	</test>
+	
+	<test name="GICTestCases2">
+		<classes>
+			<class name="com.nischay.qa.testcases.ApplicantPhotoSignaturePageTest"></class>  
+			<class name="com.nischay.qa.testcases.ApplicantDocumentUploadPageTest"></class>
+		</classes>
+	</test>
+	
+	<test name="GICTestCases3">
+		<classes>
+			<class name="com.nischay.qa.testcases.LoanDetailsPageTest"></class>  
+			<class name="com.nischay.qa.testcases.LoginFeeDetailsPageTest"></class>
+		</classes>
+	</test> 
+	
+	<test name="GICTestCases4">
+		<classes>
+			<class name="com.nischay.qa.testcases.CIBILAssessmentPageTest"></class> 
+		</classes>
+	</test> 
+	
+	 <test name="GICTestCases5">
+		<classes>
+			<class name="com.nischay.qa.testcases.IncomeAssessmentEnterDetailsPageTest"></class> 
+			<class name="com.nischay.qa.testcases.IncomeAssessmentEditIncomePageTest"></class>  
+			<class name="com.nischay.qa.testcases.IncomeAssessmentIncomeSummaryPageTest"></class>
+		</classes>
+	</test> 
+	
+	<test name="GICTestCases6">
+		<classes>
+			<class name="com.nischay.qa.testcases.InsuranceDetailsPageTest"></class>
+		</classes>
+	</test>  
+	
+	<test name="GICTestCases7">
+		<classes>
+			<class name="com.nischay.qa.testcases.ApplicationSummaryDetailsPageTest"></class>
+		</classes>
+	</test> -->
+	
+	<!-- <test name="GICTestCases11">
+		<classes>
+			<class name="com.nischay.qa.testcases.IPSOfferLetterTest"></class>
+			<class name="com.nischay.qa.testcases.PropertyDetailsPageTest"></class>
+		</classes>
+	</test>  -->
+</suite>

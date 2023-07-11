@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GIC Test Automation Test Suite" preserve-order="true">
+	<suite-files>
+
+		<suite-file path="DSA.xml" />
+        <suite-file path="BR-Applicant.xml" />
+        <suite-file path="BR-Applicant-Co-applicant.xml" />
+        <!-- <suite-file path="HO_PO.xml" /> -->
+        
+    </suite-files>
+</suite>

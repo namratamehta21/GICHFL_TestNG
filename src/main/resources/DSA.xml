@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GIC Test Automation Test Suite">
+	<parameter name="selenium.url" value="https://uadigital.gichf.com/" />
+	<parameter name="username" value="1001@partner.gichf.com"/>
+	<parameter name="password" value="Welcome@123"/>
+
+	<!-- <listeners> <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" 
+		/> </listeners> -->
+
+	<listeners>
+		<listener class-name="com.nischay.qa.util.ITestListenerClass" />
+	</listeners>
+
+
+	<test name="GICTestCases">
+		<classes>
+			<class name="com.nischay.qa.testcases.LoginPageTest"></class>
+			<!-- <class name="com.nischay.qa.testcases.DSALandingPageTest"></class> --> 
+			<!-- <class name="com.nischay.qa.testcases.DSAMultipleCoApplicantDetailsPageTest"></class> -->
+		</classes>
+	</test>
+	
+	<test name="GICTestCases1">
+		<classes>
+			<class name="com.nischay.qa.testcases.DSANewApplicationPageTest"></class> 
+		</classes>
+	</test> 
+	
+	<test name="GICTestCases2">
+		<classes>
+			<!-- <class name="com.nischay.qa.testcases.DSAApplicantDetailsPageTest"></class> -->  
+		</classes>
+	</test> 
+	
+	<test name="GICTestCases3">
+		<classes>
+			<!-- <class name="com.nischay.qa.testcases.DSACoApplicantDetailsPageTest"></class> -->
+		</classes>
+	</test>
+	
+	<test name="GICTestCases4">
+		<classes>
+			<!-- <class name="com.nischay.qa.testcases.DSADiscardApplicationTest"></class> -->  
+		</classes>
+	</test>  
+</suite>

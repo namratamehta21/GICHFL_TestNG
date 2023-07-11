@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GIC Test Automation Test Suite for HO PO User">
+	<parameter name="selenium.url" value="http://10.161.3.4/home/" />https://qadigital.gichf.com/home
+	<parameter name="username" value="2910"/>
+	<parameter name="password" value="1234"/>
+
+	<!-- <listeners> <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" /> </listeners> -->
+
+	<listeners>
+		<listener class-name="com.nischay.qa.util.ITestListenerClass" />
+	</listeners>
+
+	<test name="GICTestCases">
+		<classes>
+		
+			<class name="com.nischay.qa.testcases.HOPO_CommonQueuePageTest"></class> 
+			<class name="com.nischay.qa.testcases.HOPO_IndividualQueuePageTest"></class>
+			<class name="com.nischay.qa.testcases.HOPO_CIBILAssessmentPageTest"></class> 
+			<class name="com.nischay.qa.testcases.HOPO_IncomeAssessmentEditIncomePageTest"></class> 
+			<class name="com.nischay.qa.testcases.HOPO_ApplicationSummaryDetailsPageTest"></class>
+			 
+		</classes>
+	</test>
+	
+</suite>
